@@ -14,8 +14,9 @@ jobs:
       with:
         # necessary for github-action-til-autoformat-readme
         fetch-depth: 0
-    - name: Autoformat README
+    - name: TIL Auto-Format README
       uses: cflynn07/github-action-til-autoformat-readme@1.2.0
+
       with:
         description: |
           오늘 공부한 내용을 작성하는 공간입니다. 공부를 하고 이곳에 TIL를 적은 다음, 정제한 내용을 블로그에 작성합니다.
