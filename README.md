@@ -10,9 +10,9 @@ _4 TILs and counting..._
 
 ### 4 most recent TILs
 
+- [트랜잭션](DB/Transaction_and_Concurrency_Control.md) - Thu May 18 00:15:23 2023 +0900
 - [test](Spring/test2.md) - Thu May 18 00:12:12 2023 +0900
 - [test](DB/test.md) - Thu May 18 00:09:33 2023 +0900
-- [트랜잭션](DB/Transaction and Concurrency Control.md) - Wed May 17 23:57:00 2023 +0900
 - [Spring이란?](Spring/test.md) - Tue May 16 13:27:53 2023 +0900
 
 ### Categories
@@ -21,7 +21,7 @@ _4 TILs and counting..._
 - [Spring](#Spring)
 
 ### [DB](#DB)
-- [트랜잭션](DB/Transaction and Concurrency Control.md)
+- [트랜잭션](DB/Transaction_and_Concurrency_Control.md)
 - [test](DB/test.md)
 
 ### [Spring](#Spring)
