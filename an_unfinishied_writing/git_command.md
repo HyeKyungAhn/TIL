@@ -2,7 +2,7 @@
 
 ## commit 취소를 commit 취소해야할 때
 
-        git reset HEAD@{1} or git reset [키값]
+        git reset HEAD@{1} or git reset [키값] 
 
 </br>
 
@@ -26,7 +26,7 @@
 
 ## .gitignore에 추가한 파일이 계속 unstaged list에 등장할 때
 
-캐시 삭제 전, 현재 변경 사항이자 commit해야할 변화들은 반드시 stash 또는 commit을 하자. 아니면 삭제된다.
+캐시 삭제 전, 현재 변경 사항이자 commit해야할 변화들은 반드시 stash 또는 commit을 하자. 아니면 삭제된다. 
 
         git rm -r --cached .
         git add .
@@ -36,3 +36,23 @@
 
 [참조](https://stackoverflow.com/questions/11451535/gitignore-is-ignored-by-git)
 
+## merge를 취소하기
+
+merge전의 상태로 돌아가려면, 
+
+1 . git log 또는 git reflog를 실행하여 돌아가려는 merge 직전의 commit의 hash를 얻는다.
+
+2-1. 
+
+    git reset --hard commit-hash-before-the-merge
+       
+- --hard는 현재 커밋되지 않은 변경사항을 제거한다.
+
+</br>   
+2-2. 
+
+    git reset --merge commit-hash-before-the-merge
+
+-  --merge는 커밋되지 않은 변경사항을 유지한다.
+
+#### 참고 1
