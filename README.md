@@ -4,23 +4,27 @@
 오늘 공부한 내용을 작성하는 공간입니다. 공부를 하고 이곳에 TIL를 적은 다음, 정제한 내용을 블로그에 작성합니다.
 
 
-_6 TILs and counting..._
+_7 TILs and counting..._
 
 ---
 
 ### 5 most recent TILs
 
+- [다중 트리 구현](Algorithm/N-ary_tree.md) - Sat Jun 10 23:39:29 2023 +0900
 - [테이블의 개념과 1~3정규형](DB/Concepts_and_Normalization_of_Table.md) - Thu May 25 03:38:53 2023 +0900
 - [백업과 복구](an_unfinishied_writing/Back_up_and_Restoration.md) - Thu May 25 03:38:53 2023 +0900
 - [트랜잭션 격리 수준과 MVCC](DB/Transaction_Isolation_Level.md) - Tue May 23 23:24:09 2023 +0900
 - [트랜잭션(MySQL)](DB/Transaction_and_Concurrency_Control.md) - Thu May 18 00:22:36 2023 +0900
-- [Git Command](an_unfinishied_writing/git_command.md) - Wed Jun 7 03:28:26 2023 +0900
 
 ### Categories
 
+- [Algorithm](#Algorithm)
 - [DB](#DB)
 - [an_unfinishied_writing](#an_unfinishied_writing)
 - [git](#git)
+
+### [Algorithm](#Algorithm)
+- [다중 트리 구현](Algorithm/N-ary_tree.md)
 
 ### [DB](#DB)
 - [테이블의 개념과 1~3정규형](DB/Concepts_and_Normalization_of_Table.md)
