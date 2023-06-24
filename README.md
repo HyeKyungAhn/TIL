@@ -10,7 +10,7 @@ _12 TILs and counting..._
 
 ### 5 most recent TILs
 
-- [Spring AOP란?](Spring/AOP.md) - Sat Jun 24 02:11:50 2023 +0900
+- [AOP란?](Spring/AOP.md) - Sat Jun 24 02:11:50 2023 +0900
 - [변수(자바의 정석 2장)](Java/Java_Jungsuk_chapter2.md) - Sun Jun 18 04:08:13 2023 +0900
 - [자바의 정석 복습 - 1장](Java/Java_jungsuk_chapter1.md) - Sat Jun 17 22:03:22 2023 +0900
 - [Math.random()과 java.util.Random의 차이](Java/Math_random()_VS_Random.md) - Mon Jun 12 22:31:24 2023 +0900
@@ -39,7 +39,7 @@ _12 TILs and counting..._
 - [Math.random()과 java.util.Random의 차이](Java/Math_random()_VS_Random.md)
 
 ### [Spring](#Spring)
-- [Spring AOP란?](Spring/AOP.md)
+- [AOP란?](Spring/AOP.md)
 
 ### [an_unfinishied_writing](#an_unfinishied_writing)
 - [백업과 복구](an_unfinishied_writing/Back_up_and_Restoration.md)
