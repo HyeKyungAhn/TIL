@@ -151,7 +151,9 @@ DDL(Definition, 스키마/테이블), DML(Manipulation, 테이블), DCL(Control,
 - 잠금 정도와 교착상태의 연관성?
     
     격리 수준이 낮아질 수록 lock의 범위가 좁고 강도도 낮아지기 때문에 교착상태에 대비하기 위해서는 잠금 정도를 read committed로 하는 것이 좋다.
-- phantom read에 대해 조금 더 알아보기
+- tx의 시작은 언제인가?
+    - 트랜잭션의 대상이되는 쿼리를 실행하면 자동으로 시작됨
+    - 하지만 START TRANSACTION(SQL 표준)이나 BEGIN(Mysql)을 명시적으로 사용해주는 것이 좋다
 
 ## 참조
 데이터베이스 첫걸음 - 미크, 기무라 메이지(한빛미디어)
