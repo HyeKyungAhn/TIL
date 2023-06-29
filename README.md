@@ -4,17 +4,17 @@
 오늘 공부한 내용을 작성하는 공간입니다. 공부를 하고 이곳에 TIL를 적은 다음, 정제한 내용을 블로그에 작성합니다.
 
 
-_13 TILs and counting..._
+_14 TILs and counting..._
 
 ---
 
 ### 5 most recent TILs
 
+- [조건문과 연산자](Java/Java_Jungsuk_chapter4.md) - Thu Jun 29 18:16:44 2023 +0900
 - [연산자](Java/Java_Jungsuk_chapter3.md) - Wed Jun 28 15:30:38 2023 +0900
 - [AOP란?](Spring/AOP.md) - Sat Jun 24 02:11:50 2023 +0900
 - [변수(자바의 정석 2장)](Java/Java_Jungsuk_chapter2.md) - Sun Jun 18 04:08:13 2023 +0900
 - [자바의 정석 복습 - 1장](Java/Java_jungsuk_chapter1.md) - Sat Jun 17 22:03:22 2023 +0900
-- [Scanner와 BufferedReader](an_unfinishied_writing/Scanner_And_BufferedReader.md) - Mon Jun 12 22:31:24 2023 +0900
 
 ### Categories
 
@@ -36,6 +36,7 @@ _13 TILs and counting..._
 ### [Java](#Java)
 - [변수(자바의 정석 2장)](Java/Java_Jungsuk_chapter2.md)
 - [연산자](Java/Java_Jungsuk_chapter3.md)
+- [조건문과 연산자](Java/Java_Jungsuk_chapter4.md)
 - [자바의 정석 복습 - 1장](Java/Java_jungsuk_chapter1.md)
 - [Math.random()과 java.util.Random의 차이](Java/Math_random()_VS_Random.md)
 
