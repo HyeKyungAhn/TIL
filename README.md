@@ -4,7 +4,7 @@
 오늘 공부한 내용을 작성하는 공간입니다. 공부를 하고 이곳에 TIL를 적은 다음, 정제한 내용을 블로그에 작성합니다.
 
 
-_15 TILs and counting..._
+_16 TILs and counting..._
 
 ---
 
@@ -21,6 +21,7 @@ _15 TILs and counting..._
 - [Algorithm](#Algorithm)
 - [DB](#DB)
 - [Java](#Java)
+- [Programming](#Programming)
 - [Spring](#Spring)
 - [an_unfinishied_writing](#an_unfinishied_writing)
 - [git](#git)
@@ -40,6 +41,9 @@ _15 TILs and counting..._
 - [조건문과 연산자](Java/Java_Jungsuk_chapter4.md)
 - [자바의 정석 복습 - 1장](Java/Java_jungsuk_chapter1.md)
 - [Math.random()과 java.util.Random의 차이](Java/Math_random()_VS_Random.md)
+
+### [Programming](#Programming)
+- [객체지향의 5대원칙](Programming/oop_SOLID.md)
 
 ### [Spring](#Spring)
 - [AOP란?](Spring/AOP.md)
