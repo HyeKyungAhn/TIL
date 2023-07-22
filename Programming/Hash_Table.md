@@ -82,4 +82,4 @@ hash 알고리즘은 특수한 상황을 제외하고는 이미 존재하는 좋
 - https://www.youtube.com/watch?v=nvzVHwrrub0
 - https://velog.io/@cyranocoding/Hash-Hashing-Hash-Table해시-해싱-해시테이블-자료구조의-이해-6ijyonph6o#해시-테이블hash-table
 - https://www.youtube.com/watch?v=S7vni1hdsZE
-- https://www.youtube.com/@eleanorlim/videos
+- https://www.youtube.com/watch?v=Vi0hauJemxA

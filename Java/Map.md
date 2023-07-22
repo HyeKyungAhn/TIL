@@ -13,7 +13,7 @@
 
 ## HashMap의 특징
 1. Hash Table의 구조를 그대로 사용
-    - 데이터를 저장하는 LinkedList와 LinkedList를 저장하는 Map.Entry배열로 구성
+    - 데이터를 저장하는 LinkedList와 LinkedList의 첫 Node를 저장하는 array로 구성
     ![Alt text](image-2.png)
     ![Alt text](image-1.png)
 2. 내부적으로 LinkedList를 사용
@@ -48,3 +48,6 @@
 - 이진 검색 트리의 형태로 키와 값의 쌍을 저장하는 데이터 구조
 - 검색과 '정렬'에 적합하다
     - 하지만 HashMap이 검색 성능이 더 뛰어나다
+
+## 참고
+자바의 정석
