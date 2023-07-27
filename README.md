@@ -10,9 +10,9 @@ _22 TILs and counting..._
 
 ### 5 most recent TILs
 
+- [BigO 표기법](Programming/BigO.md) - Thu Jul 27 13:10:21 2023 +0900
 - [Java의 List](an_unfinishied_writing/List.md) - Mon Jul 24 22:37:02 2023 +0900
 - [Java 내부코드에서 final 지역 변수의 사용](Java/final_local_variable.md) - Sun Jul 23 02:05:46 2023 +0900
-- [시간복잡도와 BigO 표기법](Programming/time_complexity.md) - Wed Jul 19 23:39:08 2023 +0900
 - [Map](Java/Map.md) - Wed Jul 19 23:39:08 2023 +0900
 - [Hash Table](Programming/Hash_Table.md) - Mon Jul 17 16:58:44 2023 +0900
 
@@ -45,10 +45,10 @@ _22 TILs and counting..._
 - [Java 내부코드에서 final 지역 변수의 사용](Java/final_local_variable.md)
 
 ### [Programming](#Programming)
+- [BigO 표기법](Programming/BigO.md)
 - [Hash Table](Programming/Hash_Table.md)
 - [테스트](Programming/Software_test.md)
 - [객체지향의 5대원칙](Programming/oop_SOLID.md)
-- [시간복잡도와 BigO 표기법](Programming/time_complexity.md)
 
 ### [Spring](#Spring)
 - [AOP란?](Spring/AOP.md)
