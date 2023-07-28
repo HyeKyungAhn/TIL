@@ -4,17 +4,17 @@
 오늘 공부한 내용을 작성하는 공간입니다. 공부를 하고 이곳에 TIL를 적은 다음, 정제한 내용을 블로그에 작성합니다.
 
 
-_22 TILs and counting..._
+_23 TILs and counting..._
 
 ---
 
 ### 5 most recent TILs
 
+- [배열](Java/Array.md) - Sat Jul 29 00:59:56 2023 +0900
 - [BigO 표기법](Programming/BigO.md) - Thu Jul 27 13:10:21 2023 +0900
 - [Java의 List](an_unfinishied_writing/List.md) - Mon Jul 24 22:37:02 2023 +0900
 - [Java 내부코드에서 final 지역 변수의 사용](Java/final_local_variable.md) - Sun Jul 23 02:05:46 2023 +0900
 - [Map](Java/Map.md) - Wed Jul 19 23:39:08 2023 +0900
-- [Hash Table](Programming/Hash_Table.md) - Mon Jul 17 16:58:44 2023 +0900
 
 ### Categories
 
@@ -35,6 +35,7 @@ _22 TILs and counting..._
 - [트랜잭션(MySQL)](DB/Transaction_and_Concurrency_Control.md)
 
 ### [Java](#Java)
+- [배열](Java/Array.md)
 - [인터페이스와 추상 메서드는 각각 언제 사용해야할까?](Java/Interface_Abstract_class.md)
 - [변수(자바의 정석 2장)](Java/Java_Jungsuk_chapter2.md)
 - [연산자](Java/Java_Jungsuk_chapter3.md)
