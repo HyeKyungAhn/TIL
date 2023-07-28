@@ -26,6 +26,7 @@ LL(LinkedList) --> L
         - 비효율적인 메모리 사용이라는 단점이 있다(사용하지 않을지도 모르는 저장공간을 성능을 위해 할당해야하니까)
         - 배열 길이 초과 시, 어떻게 얼만큼 새로운 배열을 생성하는지는 어느 정도의 시간 비용이 발생한다는 것 이상으로는 명시되어있지 않다.(JDK 11기준)(어느 영상애서 doubling을 설명하기에 헷갈려서..)
             > Each ArrayList instance has a capacity. The capacity is the size of the array used to store the elements in the list. It is always at least as large as the list size. As elements are added to an ArrayList, its capacity grows automatically. The details of the growth policy are not specified beyond the fact that adding an element has constant amortized time cost.
+        - 검색 시, 저장공간이 연결되어있으므로 LinkedList보다 검색 시간이 빠르다
     - 배열의 중간 요소를 삭제하거나 추가하면 다른 데이터 구조보다 더 오래걸림(뒤의 요소들이 자리이동을 해야하니까)
 
 ### 구현
@@ -297,14 +298,16 @@ public class MyVector implements List {
     2. 중간 요소의 추가 및 삭제가 다른 데이터 구조보다 더 오래 걸린다(요소의 재배치에 시간이 걸림)
 ### LinkedList의 특징
 - Array의 단점을 극복하기 위해 LinkedList 자료구조가 고안됨
-- 불연속적인 데이터를 연결한 데이터 구조
+- 불연속적인 데이터들을 연결한 데이터 구조
 - 각 요소(node)는 저장하는 데이터와 다음 요소에 대한 참조를 저장한다
 - 추가 및 삭제 시에 추가하는 요소와 전, 후 요소의 참조 데이터만 수정하면 되므로 처리 속도가 빠르다
+- 검색 시에는 불연속 적인 데이터를 차례로 찾아가야해서 ArrayList보다는 검색 속도가 느리다
 - 이전 요소에 대한 접근이 어렵다
 
 ### DoubleLinkedList
 - LinkedList의 이전 요소 접근이 어렵다는 단점을 보완한 데이터 구조
 - 단순히 Node에 이전 요소에 대한 참조를 더한 것
+- 양 옆의 node에 대한 포인터를 저장
 
 ```
 class Node{
