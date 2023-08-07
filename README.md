@@ -4,7 +4,7 @@
 오늘 공부한 내용을 작성하는 공간입니다. 공부를 하고 이곳에 TIL를 적은 다음, 정제한 내용을 블로그에 작성합니다.
 
 
-_23 TILs and counting..._
+_24 TILs and counting..._
 
 ---
 
@@ -57,6 +57,7 @@ _23 TILs and counting..._
 ### [an_unfinishied_writing](#an_unfinishied_writing)
 - [백업과 복구](an_unfinishied_writing/Back_up_and_Restoration.md)
 - [Java의 List](an_unfinishied_writing/List.md)
+- [객체지향적 프로그래밍](an_unfinishied_writing/OOP2_Java_jungsuk.md)
 - [Scanner와 BufferedReader](an_unfinishied_writing/Scanner_And_BufferedReader.md)
 - [Git Command](an_unfinishied_writing/git_command.md)
 
