@@ -4,17 +4,17 @@
 오늘 공부한 내용을 작성하는 공간입니다. 공부를 하고 이곳에 TIL를 적은 다음, 정제한 내용을 블로그에 작성합니다.
 
 
-_26 TILs and counting..._
+_27 TILs and counting..._
 
 ---
 
 ### 5 most recent TILs
 
+- [TCP/IP 쉽게, 더 쉽게](an_unfinishied_writing/TCP_IP_easy_more_easy.md) - Tue Nov 28 00:54:46 2023 +0900
 - [String(Java)](an_unfinishied_writing/String.md) - Fri Nov 24 23:19:41 2023 +0900
 - [객체지향적 프로그래밍](Java/OOP2_Java_jungsuk.md) - Sat Aug 12 23:07:40 2023 +0900
 - [예외처리](Java/ExceptionHandling.md) - Sat Aug 12 23:07:40 2023 +0900
 - [배열](Java/Array.md) - Sat Jul 29 00:59:56 2023 +0900
-- [BigO 표기법](Programming/BigO.md) - Thu Jul 27 13:10:21 2023 +0900
 
 ### Categories
 
@@ -61,6 +61,7 @@ _26 TILs and counting..._
 - [Java의 List](an_unfinishied_writing/List.md)
 - [Scanner와 BufferedReader](an_unfinishied_writing/Scanner_And_BufferedReader.md)
 - [String(Java)](an_unfinishied_writing/String.md)
+- [TCP/IP 쉽게, 더 쉽게](an_unfinishied_writing/TCP_IP_easy_more_easy.md)
 - [Git Command](an_unfinishied_writing/git_command.md)
 
 ### [git](#git)
