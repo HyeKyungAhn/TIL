@@ -37,13 +37,46 @@ DelegatingFIlterProxy을 사용할 때 이점 중 하나인 Delaying look up은 
 
 Servlet Container가 필터를 등록할 때는 Conainer를 실행하기 전이다. Spring의 Bean(필터)은 ContextLoaderListener가 ApplicationContext를 초기화 할 때 로드된다. spring이 Bean을 로드하기도 전에 Servlet Container에서 필터를 등록하는 상황이 벌어질 수도 있다. 각각 필터를 로드하는 시기가 다른 문제를 DelegatingFilterProxy를 통해서 지연할 수 있다.
 
+SecurityConfig 클래스에 @EnableWebSecurity 적용하면 spring에서 Spring이 관리하는 Filter를 사용할 때 DelegatingFilterProxy를 web.xml에서 직접 등록하지 않아도 자동으로 사용할 수 있게된다. 하지만 Spring legacy를 사용한다면 직접 web.xml에, DispatcherServlet 설정 위에(순서 중요!) `DelegatingFilterProxy`를 등록해야한다.
+
+```
+//web.xml
+<!-- Spring Security -->
+<filter>
+    <filter-name>springSecurityFilterChain</filter-name>
+    <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+</filter>
+
+<filter-mapping>
+    <filter-name>springSecurityFilterChain</filter-name>
+    <url-pattern>/*</url-pattern>
+</filter-mapping>
+
+<!-- DispatcherServlet -->
+
+<servlet>
+    <servlet-name>dispatcher</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <init-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>/WEB-INF/spring/dispatcher-servlet.xml</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>dispatcher</servlet-name>
+    <url-pattern>/</url-pattern>
+</servlet-mapping>
+```
+
 ## FilterChainProxy
 
 <p align="center">
 <img src="../img/filterchainproxy.png" width="60%" height="100%" align="center">
 </p>
 
-관련된 필터들을 묶은 chain을 관리하고 요청에 따라 chain을 선택하고 순서대로 Filter를 적용한다. DelegatingFilterProxy으로부터 호출되며 Spring Bean이 관리하는 Bean이다.
+관련된 필터들을 묶은 chain을 관리하고 요청에 따라 chain을 선택하고 순서대로 Filter를 적용한다. SecurityFilterChain을 통해서 Filter들에게 작업을 위임한다. DelegatingFilterProxy으로부터 호출되며 Spring Bean이 관리하는 Bean이다.
 
 ## SecurityFilterChain
 
@@ -98,12 +131,12 @@ public class SecurityConfig {
 - AccessDeniedException : 접근 거부
 - AuthenticationException : 인증이 필요한 경우 또는 인증 실패
 
-2. AuthenticationException 처리
-   ExceptionTranslationFilter가 이 예외를 처리한다.
+2. `AuthenticationException` 처리
+   `ExceptionTranslationFilter`가 이 예외를 처리한다.
 
-   - SecurityContextHolder가 지워지고(누가 인증하고 있는지를 저장하는 곳)
-   - HttpServletRequest가 저장된다(인증 성공 시 재요청을 보내기 위함)
-   - AuthenticationEntryPoint로 자격 증명을 요청하는 HTTP응답을 보내는데 사용된다. (ex. 로그인 페이지로 리다이렉트)
+   - `SecurityContextHolder`가 지워지고(누가 인증하고 있는지를 저장하는 곳)
+   - `HttpServletRequest`가 저장된다(인증 성공 시 재요청을 보내기 위함)
+   - `AuthenticationEntryPoint`를 호출하여 자격 증명을 요청하는 HTTP응답을 보내는데 사용된다. (ex. 로그인 페이지로 리다이렉트)
 
 3. AccessDeniedException
    사용자가 특정 리소스에 접근 권한이 없음을 알리고 그에 따른 처리를 한다.AccessDeniedHandler가 이 예외를 처리하기위해 호출된다.

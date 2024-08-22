@@ -10,9 +10,9 @@ public interface JwtService {
 
     String createRefreshToken();
 
-    void updateRefreshToken(String username, String refreshToken);
+    void saveRefreshToken(String username, String refreshToken);
 
-    void destroyRefreshToken(String username);
+    void expireRefreshToken(String username);
 
     void sendToken(HttpServletResponse response, String accessToken, String refreshToken) throws IOException;
 
@@ -100,32 +100,30 @@ public String createRefreshToken() {
 
 ```
 @Override
-public void updateRefreshToken(String username, String refreshToken) {
-    emplDao.selectEmplById(username)
-            .ifPresentOrElse(emplDto -> emplDao.updateRefreshToken(
-                    EmplDto.EmplDtoBuilder()
-                            .emplId(username)
-                            .refreshToken(refreshToken)
-                            .build())
-            , () -> {
+public void saveRefreshToken(String username, String refreshToken) {
+    jwtDao.expireTokenByEmplId(username);
+
+            try {
+                jwtDao.insertToken(JwtDto.JwtDtoBuilder()
+                        .tknId(UUID.randomUUID().toString())
+                        .tkn(refreshToken)
+                        .creEmplId(username)
+                        .creDtm(LocalDateTime.now())
+                        .expiDtm(LocalDateTime.now().plusMinutes(1L)).build());
+            } catch (DataIntegrityViolationException e) {
                 throw new IllegalArgumentException("해당 사용자가 없습니다.");
-            });
+            }
 }
 
 @Override
-public void destroyRefreshToken(String username) {
-    emplDao.selectEmplById(username)
-            .ifPresentOrElse(emplDto -> emplDao.destroyRefreshToken(
-                    EmplDto.EmplDtoBuilder()
-                            .emplId(username)
-                            .build())
-            , () -> {
-                throw new IllegalArgumentException("해당 사용자가 없습니다.");
-            });
+public void expireRefreshToken(String username) {
+    if (jwtDao.expireTokenByEmplId(username) == 0) {
+        throw new IllegalArgumentException("해당 사용자가 없거나 만료할 토큰이 없습니다.");
+    }
 }
 ```
 
-위의 두 메서드는 refresh token을 DB에 저장하고 삭제하는 메서드입니다. 기존의 사용자 정보에 refresh token에 관련된 정보를 추가하는 것이기 때문에 updateRefreshToken라는 메서드명을 가지고 있습니다. 위의 코드에는 없지만 refresh token의 만료일시 정보도 함께 추가, 삭제해야합니다.(이 부분은 저도 아직 구현전입니다.)
+위의 두 메서드는 refresh token을 DB에 저장하고 삭제하는 메서드입니다. saveRefreshToken 메서드는 기존의 사용자 정보에 refresh token에 관련된 정보를 추가하는 것으로 구현하다 Refresh token을 사용자 정보에서 분리해서 따로 관리하게 되어 updateRefreshToken에서 saveRefreshToken로 메서드명을 변경한 이력이 있습니다.
 
 ```
 @Override
@@ -210,7 +208,6 @@ public String extractAccessToken(HttpServletRequest request) {
                     .map(Cookie::getValue)
                     .findFirst())
                     .orElse(null);
-
 }
 
 @Override

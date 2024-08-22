@@ -31,7 +31,7 @@ Spring Security는 `SecurityContextHolder`가 저장하는 정보가 어떻게 �
 사용자가 인증하려고 입력한 정보(비밀번호, 아이디)가 `Authentication`에 저장된다. 이 `Authentication`을 `AuthenticationManager`에 넘겨서 인증 방식에 맞게 인증을 시도한다.
 이 과정에서 `UserDetailService`가 DB에서 사용자 정보를 조회해서 `UserDetail` 객체를 생성한다. `Authentication` 정보와 `UserDetail`의 정보를 비교하여 사용자의 신원을 확인한다. 인증에 성공한 경우 `UserDetail` 정보는 `Authentication`에 저장된다.
 
-`AuthThentication`은 다음의 세가지를 포함한다.
+`Authentication`은 다음의 세가지를 포함한다.
 
 - principal : `UserDetail` 인스턴스. 사용자의 실제 정보(DB에서 가져온)
 - credentials : 인증에 필요한 password같은 자격 증명 정보. 인증 성공 후에는 `ProvideManager`가 이 민감한 정보를 지움.
@@ -95,4 +95,4 @@ Spring Security는 `SecurityContextHolder`가 저장하는 정보가 어떻게 �
 
 ## 참조(+사진)
 
-https://docs.spring.io/spring-security/reference/servlet/authentication/architecture.html#servlet-authentication-authenticationmanager
+https://docs.spring.io/spring-security/reference/servlet/authentication/architecture.html

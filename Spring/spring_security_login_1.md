@@ -35,6 +35,12 @@ SecurityConfig의 파일에는 어떤 빈들이 있는지 알아보고 그 역�
 
 ### Security Config 파일 구성
 
+Security Config 파일에서는 spring security에서 사용자 인증을 하는데 필요한 필터들을 다룬다.
+
+개발자의 필요에 따라 어떤 필터는 사용하지 않기도하고 또 특정한 용도로 쓰이는 커스텀 필터들을 추가하기도 한다. 나는 JWT 인증 방식을 사용하기 때문에 sessioin을 사용하여 사용자 정보를 서버에 저장하는 필터들은 사용하지 않았다.
+
+또한 spring security에서 커스텀 필터들을 관리, 제공할 수 있도록 SecurityConfig.java 에서 등록한다.
+
 #### SecurityFilterChain
 
 ```
