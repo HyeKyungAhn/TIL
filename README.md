@@ -4,17 +4,17 @@
 오늘 공부한 내용을 작성하는 공간입니다. 공부를 하고 이곳에 TIL를 적은 다음, 정제한 내용을 블로그에 작성합니다.
 
 
-_32 TILs and counting..._
+_43 TILs and counting..._
 
 ---
 
 ### 5 most recent TILs
 
-- [RESTful API](Network/RESTful_API.md) - Thu Jul 18 23:05:19 2024 +0900
-- [RootContext vs Web Application Context](Spring/RootConfig_vs_WebMvcConfig.md) - Mon Jun 10 21:52:53 2024 +0900
-- [String(Java)](an_unfinishied_writing/String.md) - Fri Nov 24 23:19:41 2023 +0900
-- [예외처리](Java/ExceptionHandling.md) - Sat Aug 12 23:07:40 2023 +0900
-- [객체지향적 프로그래밍](Java/OOP2_Java_jungsuk.md) - Sat Aug 12 23:07:40 2023 +0900
+- [redis container에서 사용자 정의 redis.conf 사용하기](docker/redis_config.md) - Thu Nov 28 01:19:30 2024 +0900
+- [host에서 host에서 실행되는 container(redis server) 연결하기](docker/connection_localwebapp_and_container.md) - Thu Nov 28 01:19:30 2024 +0900
+- [Process와 Thread의 관계](OS/process_vs_thread.md) - Thu Oct 24 18:28:07 2024 +0900
+- [@WebAppConfiguration의 resourceBasePath](Spring/webAppConfiguration_resourceBasePath.md) - Sat Sep 28 08:05:47 2024 +0900
+- [컨트롤러의 원하는 파라미터만 변환하기](Spring/HandlerMethodArgumentResolver.md) - Wed Sep 25 22:03:03 2024 +0900
 
 ### Categories
 
@@ -24,9 +24,11 @@ _32 TILs and counting..._
 - [Javascript](#Javascript)
 - [Linux](#Linux)
 - [Network](#Network)
+- [OS](#OS)
 - [Programming](#Programming)
 - [Spring](#Spring)
 - [an_unfinishied_writing](#an_unfinishied_writing)
+- [docker](#docker)
 - [git](#git)
 
 ### [Algorithm](#Algorithm)
@@ -60,6 +62,9 @@ _32 TILs and counting..._
 - [RESTful API](Network/RESTful_API.md)
 - [Chapter 2 - 네트워크 서비스와 애플리케이션 계층(TCP/IP 쉽게, 더 쉽게)](Network/TCP_IP_ch2.md)
 
+### [OS](#OS)
+- [Process와 Thread의 관계](OS/process_vs_thread.md)
+
 ### [Programming](#Programming)
 - [BigO 표기법](Programming/BigO.md)
 - [Hash Table](Programming/Hash_Table.md)
@@ -68,7 +73,15 @@ _32 TILs and counting..._
 
 ### [Spring](#Spring)
 - [AOP란?](Spring/AOP.md)
+- [컨트롤러의 원하는 파라미터만 변환하기](Spring/HandlerMethodArgumentResolver.md)
 - [RootContext vs Web Application Context](Spring/RootConfig_vs_WebMvcConfig.md)
+- [spring security - architecture](Spring/spring_security_1.md)
+- [spring security - Servlet Authentication Architecture](Spring/spring_security_2.md)
+- [Spring Security 계층권한(HierarchyImpl) 설정하기](Spring/spring_security_hierarchy.md)
+- [Spring Security, JWT로 Login 기능 구현하기(1) - SecurityConfig 파일 구성](Spring/spring_security_login_1.md)
+- [Spring Security, JWT로 Login 기능 구현하기(2) - JwtService](Spring/spring_security_login_2.md)
+- [Spring Security, JWT로 Login 기능 구현하기(3)](Spring/spring_security_login_3.md)
+- [@WebAppConfiguration의 resourceBasePath](Spring/webAppConfiguration_resourceBasePath.md)
 
 ### [an_unfinishied_writing](#an_unfinishied_writing)
 - [백업과 복구](an_unfinishied_writing/Back_up_and_Restoration.md)
@@ -77,6 +90,10 @@ _32 TILs and counting..._
 - [String(Java)](an_unfinishied_writing/String.md)
 - [Git Command](an_unfinishied_writing/git_command.md)
 - [Promise](an_unfinishied_writing/promise.md)
+
+### [docker](#docker)
+- [host에서 host에서 실행되는 container(redis server) 연결하기](docker/connection_localwebapp_and_container.md)
+- [redis container에서 사용자 정의 redis.conf 사용하기](docker/redis_config.md)
 
 ### [git](#git)
 - [두 개의 원격 저장소 병합](git/merge_remote_to_remote.md)
