@@ -4,17 +4,17 @@
 오늘 공부한 내용을 작성하는 공간입니다. 공부를 하고 이곳에 TIL를 적은 다음, 정제한 내용을 블로그에 작성합니다.
 
 
-_31 TILs and counting..._
+_32 TILs and counting..._
 
 ---
 
 ### 5 most recent TILs
 
+- [RESTful API](Network/RESTful_API.md) - Thu Jul 18 23:05:19 2024 +0900
 - [RootContext vs Web Application Context](Spring/RootConfig_vs_WebMvcConfig.md) - Mon Jun 10 21:52:53 2024 +0900
 - [String(Java)](an_unfinishied_writing/String.md) - Fri Nov 24 23:19:41 2023 +0900
-- [객체지향적 프로그래밍](Java/OOP2_Java_jungsuk.md) - Sat Aug 12 23:07:40 2023 +0900
 - [예외처리](Java/ExceptionHandling.md) - Sat Aug 12 23:07:40 2023 +0900
-- [배열](Java/Array.md) - Sat Jul 29 00:59:56 2023 +0900
+- [객체지향적 프로그래밍](Java/OOP2_Java_jungsuk.md) - Sat Aug 12 23:07:40 2023 +0900
 
 ### Categories
 
@@ -57,6 +57,7 @@ _31 TILs and counting..._
 - [The Linux Command Line(5th)](Linux/The_Linux_Command_Line(5th).md)
 
 ### [Network](#Network)
+- [RESTful API](Network/RESTful_API.md)
 - [Chapter 2 - 네트워크 서비스와 애플리케이션 계층(TCP/IP 쉽게, 더 쉽게)](Network/TCP_IP_ch2.md)
 
 ### [Programming](#Programming)
